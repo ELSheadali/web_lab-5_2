@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    
+}
+
+.calendar-container {
+    text-align: center;
+    background-color: #eed5b0;
+
+    padding: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 600px;
+}
+
+#selected-date {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% - 22px); /* Adjust width to match container padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9ae61;}
+
+#reset-date {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e9ae61;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust width to match container padding */
+}
+
+#reset-date:hover {
+    background-color: #e9ae61;
+}
+
+.calendar {
+    width: 100%; /* Ensure the calendar takes the full width of the container */
+    margin-top: 10px;
+    
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #e9ae61;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.month-year {
+    display: flex;
+    align-items: center;
+}
+
+.month-year span {
+    margin: 0 5px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.calendar-table th, .calendar-table td {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.calendar-table th {
+    background: #eed5b0;
+    font-weight: bold;
+}
+
+.calendar-table td {
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.calendar-table td:hover {
+    background: #f0f0f0;
+}
+
+.selected {
+    background: #e9ae6165 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.today {
+    border: 2px solid #e9ae61;
+    border-radius: 50%;
+}
